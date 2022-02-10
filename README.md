@@ -1,2 +1,119 @@
-# PRUEBA1.2_
-qwq
+<!DOCTYPE html>
+<html lang="es">
+<title>Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body style="background-image: url('img/concor.jpg');background-size:100%;">
+
+    <div class="w3-card-4 w3-animate-zoom" style="margin-left:30%;width:40%;margin-top:50px; background-color:white;">
+  
+      <div class="w3-center"><br>
+        <img src="img/ok.png" alt="Avatar" style="width:100%" class=" w3-margin-top">
+      </div>
+
+      <form class="w3-container" method="POST" action="php/login.php">
+        <div class="w3-section">
+          <label><b>Correo electronico</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Correo electronico" name="email" required>
+          <label><b>Contraseña</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="Contraseña" name="pass" required>
+          <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Acceder</button>
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <button type="button" class="w3-button w3-red" onclick="document.getElementById('id01').style.display='block'">Registrase</button>
+		
+      </div>
+
+    </div>
+         <!-- boton registrar -->
+
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+  
+      <div class="w3-center w3-orange"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+                   <h3 class="w3-text-white"><b>Registre sus datos</b> </h3>
+		      
+
+
+		<form action="php/registro_cliente.php" method="POST" id="myForm">
+			<div class="form">
+			
+			<div class="w3-row">
+				<div class="w3-half w3-container ">
+					<label for="nombre">Escriba su nombre</label>
+					<input class="w3-input" name="nombre" type="text" required>
+				</div>
+	
+				
+				<div class="w3-half w3-container ">
+					<label for="apellido">Escriba sus apellidos</label>
+					<input class="w3-input" name="apellido" type="text" required>
+				</div>
+				
+				
+				<div class="w3-half w3-container ">
+					<label for="correo_elec">Escriba correo</label>
+					<input class="w3-input" name="correo_elec" type="email" required>
+				</div>
+				
+				
+					<div class="w3-half w3-container ">
+					<label for="telefono">Escriba su numero telefonico</label>
+					<input class="w3-input" name="telefono" type="text" required>
+				</div>
+				
+				
+				<div class="w3-half w3-container ">
+					<label for="contrasena">Escriba una contraseña</label><label id="error_pass" class="w3-text-red w3-hide"> Las contraseñas no coinciden</label><label id="error_pass2" class="w3-text-red w3-hide"> No a ingresado una contraseña</label>
+					<input id="contrasena" class="w3-input" name="contrasena" type="password">
+				</div>
+				
+				<div class="w3-half w3-container ">
+					<label for="contrasena2">Confirme su contraseña</label>
+					<input id="contrasena2" class="w3-input" name="contrasena2" type="password">
+				</div>
+				
+				
+		 
+		<div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+			
+			<br><br>
+			<button type="button" class="w3-button w3-red" onclick="comprobar_pass()">Registrase</button>
+		
+        </div>
+		
+		
+			</div>
+		</form>
+		
+		
+			</div> 
+  </div> 
+ </div> 
+</div>
+
+<script>
+function comprobar_pass() {
+	var contrasena = document.getElementById("contrasena").value;
+	var contrasena2 = document.getElementById("contrasena2").value;
+	if(contrasena != ''){
+		if(contrasena === contrasena2 )
+			document.getElementById("myForm").submit();
+		else{
+			document.getElementById("error_pass").className = "w3-text-red w3-show";
+		}
+	}else
+		document.getElementById("error_pass2").className = "w3-text-red w3-show";
+		
+}
+</script>
+
+
+</body>
+</html>
+
