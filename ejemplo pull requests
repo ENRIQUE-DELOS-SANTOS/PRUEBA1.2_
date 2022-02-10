@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <title> BRISHER</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css"> 
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    
+  </head>
+  <body>
+  <header class="header"id="inicio">
+   
+  <img src="https://i.ibb.co/wsZFkQ0/menu-regular-24-1.png" alt="" class="hamburger">
+  
+ <nav class="menu-navegacion">
+<a href="#inicio">inicio</a>
+<a href="#servicio">ropa</a>
+<a href="#portafolio">calzado</a>
+<a href="#expertos">belleza</a>
+<a href="#contacto">cosmeticos</a>
+</nav>
+<div class="contenedor head">
+ <h1 class="titulo">convertimos tus suenos en realidad </h1>
+ <p class="copy">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+</div>
+ </header>
+  <main>
+    <section class="contenedor" id="servicio">
+    <h2 class="subtitulo"> NUESTRO SERVICIO</h2>
+    <div class="contenedor-servicio">
+    <img src="https://i.ibb.co/zs1rmkx/Coach-Monochromatic.png" alt="">
+    <div class="checklist-servicio">
+      <div class="service">
+        <h3 class="n-service"><span class="number">1</span>pagina web</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quibusdam odio consectetur porro voluptatum quas mollitia architecto commodi alias laboriosam!</p>
+      </div>
+      <div class="service">
+        <h3 class="n-service"><span class="number">2</span>pagina web</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quibusdam odio consectetur porro voluptatum quas mollitia architecto commodi alias laboriosam!</p>
+      </div>
+      <div class="service">
+        <h3 class="n-service"><span class="number">3</span>pagina web</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius quibusdam odio consectetur porro voluptatum quas mollitia architecto commodi alias laboriosam!</p>
+      </div>
+      </div>
+      </div>
+    </section>
+    <section class="gallery" id="portafolio">
+     <div class="contenedor">
+       <h2 class="subtitulo">Galeria</h2>
+        <div class="contenedor-galeria">
+          <img src="https://i.ibb.co/sPPwMBF/img1.jpg" alt="" class="img-galeria">
+          <img src="https://i.ibb.co/HghV0TS/img2.jpg" alt="" class="img-galeria">
+          <img src="https://i.ibb.co/9Z3TsJV/img3.jpg" alt="" class="img-galeria">
+          <img src="https://i.ibb.co/1TTgwKM/img4.jpg" alt="" class="img-galeria">
+          <img src="https://i.ibb.co/gFDKPCT/img5.jpg" alt="" class="img-galeria">
+          <img src="https://i.ibb.co/Rj8xxk6/img6.jpg" alt="" class="img-galeria">
+
+        </div>
+       </div> 
+    </section>
+    <section class="contenedor" id="expertos">
+      <h2 class="subtitulo">expertos en paginas</h2>
+        <section class="expert">
+          <div class="cont-expert">
+            <img src="https://i.ibb.co/2ZyPc2F/Phone-maintenance-Monochromatic.png" alt="Phone-maintenance-Monochromatic">
+            <h3 class="n-expert">Analitics</h3>
+          </div>
+          <div class="cont-expert">
+            <img src="https://i.ibb.co/x8XDKMP/World-wide-web-Monochromatic.png" alt="World-wide-web-Monochromatic">
+            <h3 class="n-expert">SEO</h3>
+          </div>
+          <div class="cont-expert">
+            <img src="https://i.ibb.co/cXVw9Yq/Conference-presentation-Monochromatic.png" alt="Conference-presentation-Monochromatic">
+            <h3 class="n-expert">segurida</h3>
+          </div>
+        </section>
+    </section>
+  </main>
+    <footer id="contacto">
+      <div class="contenedor footer-cont">
+        <div class="contactanos">
+          <h2 class="brand">Luis enrique velazquez Perez</h2>
+          <p>somos expertos en creacion de paginas</p>
+        </div>
+        <div class="social-media">
+          <a href="./" class="social media-icon">
+            <i class='bx bxl-facebook'></i>
+          </a>
+          <a href="./" class="social media-icon">
+            <i class='bx bxl-twitter'></i>
+          </a>
+          <a href="./" class="social media-icon">
+            <i class='bx bxl-instagram-alt' ></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="js/menu.js"></script>
+    <script src="js/lightbox.js"></script>
+  </body>
+</html>
